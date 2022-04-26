@@ -21,3 +21,8 @@ app.get('/v1/explorers', (req, res) => {
     const explorers=[explorer1, explorer2, explorer3, explorer4]
     res.status(200).json(explorers)
 })
+
+app.post('/v1/explorers', (req, res) => {
+    console.log(`Api Explorers POST request ${new Date()}`)
+    resizeTo.status(201).json({message:"Created"})
+})
