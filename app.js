@@ -7,9 +7,10 @@ app.use(express.json())//Indicamos que usaremos JSON
 const port=3000
 
 //Con esto inicializamos esta app
+
 app.listen(port, ()=>{
     console.log(`Example app listening on port ${port}`)
-})
+}) 
 
 //HTTP METHODS
 app.get('/v1/explorers', (req, res) => {
